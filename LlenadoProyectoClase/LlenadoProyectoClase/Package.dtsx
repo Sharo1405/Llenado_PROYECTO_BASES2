@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="115"
-  DTS:VersionGUID="{DE7A5CDB-FDAD-41E6-AD61-0BAA0FC7D075}">
+  DTS:VersionBuild="116"
+  DTS:VersionGUID="{0D5F0B5B-66F4-486A-88CE-80E629E02E2A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,7 +37,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0O8PfQulSk2QAsmFK7YgwgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADtmOSZ7PCSwjwinBQWc3YJamvwC7NslRdgIXEDaeWqzQAAAAAOgAAAAAIAACAAAABZid44wyA+5VwynKTOI3Ssiy/DoOvslq0Tf9ZIc9JPuhAAAAB5H9ctsp+SEWh7qgmsErLcQAAAAAqhrZ4rh5vRy21/biokiRtAtVjA7G6ql8FASioAuHvX8Y5lv/WEyRPnWIjMYQCTWq+AEtztHNEc14EDTmvE/QA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0O8PfQulSk2QAsmFK7YgwgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAjrfUnpJjt3mrsXvj5RBj0o7EeuXewFK6QQ1qw5O4DCwAAAAAOgAAAAAIAACAAAAAXrrhFdT/NHCP3C/jM9Huf+cfwK2gdXM2CPt/KohLqchAAAABjhVzT2pLl7N2VRGGOmTrKQAAAAAGpSGCzTY65GR4tKNiotYCudm2I5sOjuP8gRH9CNE3HLqR3YjAs8gNtBe//YfhBjLcnRWoqACFQMkcE1WjpOqg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -52,7 +52,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0O8PfQulSk2QAsmFK7YgwgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAADNrxyhkhjwpTRcAiXOtba9KzvCwaFTvW3PdYKF0DNGgAAAAAOgAAAAAIAACAAAADb67Ln6QgdddiRKfrvNS5ehKqiBpUPeIQBtx0GOWzIWBAAAACKb0nF6j1aZcKLfvSxXtl/QAAAAOl6CR5mePEh79+G9f57d9oc8nHOECj6tmgDJx+pqchstr9A7Qgfx1ZHeL2A1jvTuz/Y7ILjy8eBTqBepMMUmF8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0O8PfQulSk2QAsmFK7YgwgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADxdPVay+FPN+9irAob7huxd+mxUDH9Wz8Hy8BwmkFhEgAAAAAOgAAAAAIAACAAAADWjG4iXYzg6V3sPUGDvyyVa89L8lMnsHsBC4m2ZdLVTBAAAAD0b66iL4Wlvs+sbWshNp4HQAAAAAzCmsFdqDHHPiErhwqarbCo3cmyegFoXu+Os0Hf2J/3M7elOj4Q6YS+Q4Ss56Tnu0R3grYjR4n86f8tInb+7Gg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2227,7 +2227,23 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{F132D600-5119-48FA-B98C-9B225BD6F11B}"
-          SQLTask:SqlStatementSource="delete from TEMPORAL;&#xA;delete from POBLACION;&#xA;delete from POBLACION_RIESGO;&#xA;delete from PAIS_ESTADISTICA;&#xA;delete from CASOS;&#xA;delete from MUERTES;&#xA;delete from PRUEBA;&#xA;delete from TIPO_PRUEBA;&#xA;delete from VACUNACION;&#xA;delete from POBLACION_ADMISIONES;&#xA;delete from POBLACION_PACIENTES;&#xA;delete from PAIS;&#xA;delete from CONTINENTE;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="DBCC CHECKIDENT (POBLACION, RESEED, 0);&#xA;DBCC CHECKIDENT (POBLACION_RIESGO, RESEED, 0);&#xA;DBCC CHECKIDENT (PAIS_ESTADISTICA, RESEED, 0);&#xA;DBCC CHECKIDENT (CASOS, RESEED, 0);&#xA;DBCC CHECKIDENT (MUERTES, RESEED, 0);&#xA;DBCC CHECKIDENT (PRUEBA, RESEED, 0);&#xA;DBCC CHECKIDENT (TIPO_PRUEBA, RESEED, 0);&#xA;DBCC CHECKIDENT (VACUNACION, RESEED, 0);&#xA;DBCC CHECKIDENT (POBLACION_ADMISIONES, RESEED, 0);&#xA;DBCC CHECKIDENT (POBLACION_PACIENTES, RESEED, 0);&#xA;DBCC CHECKIDENT (PAIS, RESEED, 0);&#xA;DBCC CHECKIDENT (CONTINENTE, RESEED, 0);&#xA;&#xA;delete from TEMPORAL;&#xA;delete from POBLACION;&#xA;delete from POBLACION_RIESGO;&#xA;delete from PAIS_ESTADISTICA;&#xA;delete from CASOS;&#xA;delete from MUERTES;&#xA;delete from PRUEBA;&#xA;delete from TIPO_PRUEBA;&#xA;delete from VACUNACION;&#xA;delete from POBLACION_ADMISIONES;&#xA;delete from POBLACION_PACIENTES;&#xA;delete from PAIS;&#xA;delete from CONTINENTE;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{E8C9DA44-B22B-4967-90AE-A1325A79DB82}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -36173,6 +36189,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:ObjectName="Constraint 12"
       DTS:To="Package\Llenado Poblacion Paciente" />
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 13]"
+      DTS:CreationName=""
+      DTS:DTSID="{934ED910-DD97-4F17-A0E5-9D2E0A928D96}"
+      DTS:From="Package\Llenado Poblacion Paciente"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 13"
+      DTS:To="Package\Execute SQL Task 1" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
       DTS:DTSID="{5F33E31C-83F8-4484-A0A9-6EED7BF153B0}"
@@ -36647,6 +36671,32 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                     Point3="34.871430377814,57.0117653708146" />
                   <mssgle:LineSegment
                     End="54.242860755628,57.0117653708146" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\Execute SQL Task 1"
+          TopLeft="666.071439914557,383.308828905173" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 13]"
+          TopLeft="569.885720489463,403.625005127753">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="96.1857194250944,0"
+              Start="0,0"
+              End="88.6857194250944,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="88.6857194250944,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
