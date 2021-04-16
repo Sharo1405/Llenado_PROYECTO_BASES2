@@ -58,8 +58,22 @@ Consulta que agrupe la cantidad actual de contagios por país.*/
 	Select * from top_pais_mas_vacunas;
 
 /*CONSULTA 9: Consulta que muestre los datos de Guatemala para un rango de fechas especifico.*/
-	SELECT * FROM CASOS, PAIS 
-	WHERE CASOS.ID_PAIS=PAIS.ID_PAIS 
-	and PAIS.LOCATIONN='Guatemala'
-	and CASOS.DATEE BETWEEN DATEADD(day,-15,CONVERT(date,GETDATE())) and DATEADD(day,-3,CONVERT(date,GETDATE()));
+select * from (	
+	SELECT pais.ID_PAIS,casos.TOTAL_CASES,casos.DATEE FROM pais
+	inner join casos on pais.ID_PAIS=casos.ID_PAIS
+	WHERE pais.ID_PAIS=79
+	)a
+	full outer join	
+	(
+	SELECT pais.ID_PAIS,MUERTES.TOTAL_DEATHS,MUERTES.DATEE FROM pais
+	inner join MUERTES on pais.ID_PAIS=MUERTES.ID_PAIS
+	WHERE pais.ID_PAIS=79
+	)b on a.DATEE=b.DATEE
+/*otra forma*/
+Select * from casos
+inner join muertes on muertes.ID_PAIS=casos.ID_PAIS and MUERTES.DATEE=casos.datee
+inner join VACUNACION on VACUNACION.ID_PAIS=casos.ID_PAIS and VACUNACION.DATEE = casos.datee
+inner join prueba on prueba.ID_PAIS=casos.ID_PAIS and prueba.DATEE=casos.datee
+where casos.ID_PAIS=79
+and casos.DATEE between DATEADD(day,-25,CONVERT(date,GETDATE())) and DATEADD(day,-3,CONVERT(date,GETDATE()))
 
