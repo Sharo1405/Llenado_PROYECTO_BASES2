@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="117"
-  DTS:VersionGUID="{05041640-7754-495C-BA09-6B2979AD094E}">
+  DTS:VersionBuild="124"
+  DTS:VersionGUID="{024A49B5-03E9-41ED-902F-E65221EAAE3F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,7 +37,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0O8PfQulSk2QAsmFK7YgwgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADVLU0UldbpL80gVDxr72y3z44vL9N4Zojjj5RTCFCYtgAAAAAOgAAAAAIAACAAAAD9hmbh9IYviN+FUxsUH1VzawztFA7nU7ohNH3I3yd7JhAAAAC0aoLuOoJi5D96OoeRYZuwQAAAAId+t1Q5/Qous6Xh5cbAhVOuaX0VZifGQYREOiRcM6n2DobmMQRChBS+RbvuLohKq//pfcOXsD3lQpEM+cwdbT0</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0O8PfQulSk2QAsmFK7YgwgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADoLoaGHxx32T2DnemLqbYO1RdNF9yi6jwkk7duv5PGSQAAAAAOgAAAAAIAACAAAADLQcPqrON4Kb/2QkDl5JK/6MnZUFmr1Ty70uAji7RewxAAAADeEi+u8aDrmzTFCizACem6QAAAACk0FWJRNdyOosU7QzAC5meE3eLSn4HVjHBHRpoKiIq4T3Nb3orp+fjKGSr9wYQMMNR4u/+VIdd5mJo6iuVeGG8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -52,7 +52,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0O8PfQulSk2QAsmFK7YgwgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADL6ee0DugqrAuwyw6A4O6RjtQM7sx3kl9+3cfMO5RWAQAAAAAOgAAAAAIAACAAAADGOMrt3Znw63W/K7jspE7PO1SsQUdODvL1oYUNO2lK1hAAAAAebKz9+Tdc3NjCpg++PdjpQAAAAFA6KZdI8E93ytXEdHrvRu5+ER2iXhbYT4jwwEbVR3r32RLzkGxq0IEGZKSdm0rzkyX7/TcBya1VW7ksfiS2vr8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0O8PfQulSk2QAsmFK7YgwgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAMydPRrhZ7jFbmUxpMNfqagr8eJ2CDboXbYyCGOLE4wgAAAAAOgAAAAAIAACAAAAD3KzcYBvYlWh4gKIjz7ni5TwIAGReygBA3cgMlKYchtBAAAAAH1jlpLlK+MzM/Oxdf8W8pQAAAAPyWlXIezIM4r9lLxG4hCbd58BAFgVCRuX2J1wCBS1Z35gA7eRFkdI1vpmrPgO7T+aJ4fq6aveC8bRhqBkCnug4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -99,18 +99,8 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
       DTS:CreationName="EXCEL"
-      DTS:DTSID="{50D63351-A8CE-400C-B549-B93D76D19165}"
+      DTS:DTSID="{BDAF625F-9407-4C50-B417-2FC3A08F6582}"
       DTS:ObjectName="Excel Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\sharolin\Desktop\Error\owid-covid-data (1).xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{566052B5-D991-4012-8F04-B10998D663BB}"
-      DTS:ObjectName="Excel Connection Manager 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\sharolin\Desktop\Error\owid-covid-data (1).xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
@@ -962,7 +952,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">Sheet$</property>
+                  name="OpenRowset">Sheet1$</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2307,22 +2297,6 @@
                       externalMetadataColumnId="Package\Llenado Casos\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[ID_PAIS]"
                       lineageId="Package\Llenado Casos\Lookup 1.Outputs[Lookup Match Output].Columns[ID_PAIS]" />
                     <inputColumn
-                      refId="Package\Llenado Casos\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[derivada_totalcasos]"
-                      cachedDataType="numeric"
-                      cachedName="derivada_totalcasos"
-                      cachedPrecision="18"
-                      cachedScale="5"
-                      externalMetadataColumnId="Package\Llenado Casos\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[TOTAL_CASES]"
-                      lineageId="Package\Llenado Casos\Derived Column 1.Outputs[Derived Column Output].Columns[derivada_totalcasos]" />
-                    <inputColumn
-                      refId="Package\Llenado Casos\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[derivada_newcasos]"
-                      cachedDataType="numeric"
-                      cachedName="derivada_newcasos"
-                      cachedPrecision="18"
-                      cachedScale="5"
-                      externalMetadataColumnId="Package\Llenado Casos\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[NEW_CASES]"
-                      lineageId="Package\Llenado Casos\Derived Column 1.Outputs[Derived Column Output].Columns[derivada_newcasos]" />
-                    <inputColumn
                       refId="Package\Llenado Casos\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[derivada_newcasossmooti]"
                       cachedDataType="numeric"
                       cachedName="derivada_newcasossmooti"
@@ -2362,6 +2336,18 @@
                       cachedScale="5"
                       externalMetadataColumnId="Package\Llenado Casos\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[POSITIVE_RATE]"
                       lineageId="Package\Llenado Casos\Derived Column 1.Outputs[Derived Column Output].Columns[derivada_positiverate]" />
+                    <inputColumn
+                      refId="Package\Llenado Casos\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[PRUEBA_TOTALCASOS]"
+                      cachedDataType="i4"
+                      cachedName="PRUEBA_TOTALCASOS"
+                      externalMetadataColumnId="Package\Llenado Casos\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[TOTAL_CASES]"
+                      lineageId="Package\Llenado Casos\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_TOTALCASOS]" />
+                    <inputColumn
+                      refId="Package\Llenado Casos\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[PRUEBA_NEW_CASES]"
+                      cachedDataType="i4"
+                      cachedName="PRUEBA_NEW_CASES"
+                      externalMetadataColumnId="Package\Llenado Casos\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[NEW_CASES]"
+                      lineageId="Package\Llenado Casos\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_NEW_CASES]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3996,6 +3982,18 @@
                       cachedLength="50"
                       cachedName="DATEE"
                       lineageId="Package\Llenado Casos\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[DATEE]" />
+                    <inputColumn
+                      refId="Package\Llenado Casos\Data Conversion 2.Inputs[Data Conversion Input].Columns[TOTAL_CASES]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL_CASES"
+                      lineageId="Package\Llenado Casos\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[TOTAL_CASES]" />
+                    <inputColumn
+                      refId="Package\Llenado Casos\Data Conversion 2.Inputs[Data Conversion Input].Columns[NEW_CASES]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NEW_CASES"
+                      lineageId="Package\Llenado Casos\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[NEW_CASES]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -4065,6 +4063,46 @@
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
                           name="SourceInputColumnLineageID">#{Package\Llenado Casos\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[DATEE]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenado Casos\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_TOTALCASOS]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Llenado Casos\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_TOTALCASOS]"
+                      name="PRUEBA_TOTALCASOS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenado Casos\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[TOTAL_CASES]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenado Casos\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_NEW_CASES]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Llenado Casos\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_NEW_CASES]"
+                      name="PRUEBA_NEW_CASES"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenado Casos\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[NEW_CASES]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -8387,22 +8425,6 @@ where [refTable].[ISO_CODE] = ? and [refTable].[LOCATIONN] = ?</property>
                       externalMetadataColumnId="Package\Llenado Muertes\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[ID_PAIS]"
                       lineageId="Package\Llenado Muertes\Lookup 1.Outputs[Lookup Match Output].Columns[ID_PAIS]" />
                     <inputColumn
-                      refId="Package\Llenado Muertes\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[derivada_TOTAL_DEATHS]"
-                      cachedDataType="numeric"
-                      cachedName="derivada_TOTAL_DEATHS"
-                      cachedPrecision="18"
-                      cachedScale="5"
-                      externalMetadataColumnId="Package\Llenado Muertes\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[TOTAL_DEATHS]"
-                      lineageId="Package\Llenado Muertes\Derived Column 1.Outputs[Derived Column Output].Columns[derivada_TOTAL_DEATHS]" />
-                    <inputColumn
-                      refId="Package\Llenado Muertes\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[derivada_NEW_DEATHS]"
-                      cachedDataType="numeric"
-                      cachedName="derivada_NEW_DEATHS"
-                      cachedPrecision="18"
-                      cachedScale="5"
-                      externalMetadataColumnId="Package\Llenado Muertes\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[NEW_DEATHS]"
-                      lineageId="Package\Llenado Muertes\Derived Column 1.Outputs[Derived Column Output].Columns[derivada_NEW_DEATHS]" />
-                    <inputColumn
                       refId="Package\Llenado Muertes\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[derivada_NEW_DEATHS_SMOOTHED]"
                       cachedDataType="numeric"
                       cachedName="derivada_NEW_DEATHS_SMOOTHED"
@@ -8442,6 +8464,18 @@ where [refTable].[ISO_CODE] = ? and [refTable].[LOCATIONN] = ?</property>
                       cachedScale="5"
                       externalMetadataColumnId="Package\Llenado Muertes\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[CARDIOVASC_DEATH_RATE]"
                       lineageId="Package\Llenado Muertes\Derived Column 1.Outputs[Derived Column Output].Columns[derivada_CARDIOVASC_DEATH_RATE]" />
+                    <inputColumn
+                      refId="Package\Llenado Muertes\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[PRUEBA_NEW_DEATHS]"
+                      cachedDataType="i4"
+                      cachedName="PRUEBA_NEW_DEATHS"
+                      externalMetadataColumnId="Package\Llenado Muertes\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[NEW_DEATHS]"
+                      lineageId="Package\Llenado Muertes\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_NEW_DEATHS]" />
+                    <inputColumn
+                      refId="Package\Llenado Muertes\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[PRUEBA_TOTAL_DEATHS]"
+                      cachedDataType="i4"
+                      cachedName="PRUEBA_TOTAL_DEATHS"
+                      externalMetadataColumnId="Package\Llenado Muertes\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[TOTAL_DEATHS]"
+                      lineageId="Package\Llenado Muertes\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_TOTAL_DEATHS]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -10076,6 +10110,18 @@ where [refTable].[ISO_CODE] = ? and [refTable].[LOCATIONN] = ?</property>
                       cachedLength="50"
                       cachedName="DATEE"
                       lineageId="Package\Llenado Muertes\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[DATEE]" />
+                    <inputColumn
+                      refId="Package\Llenado Muertes\Data Conversion 2.Inputs[Data Conversion Input].Columns[TOTAL_DEATHS]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL_DEATHS"
+                      lineageId="Package\Llenado Muertes\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[TOTAL_DEATHS]" />
+                    <inputColumn
+                      refId="Package\Llenado Muertes\Data Conversion 2.Inputs[Data Conversion Input].Columns[NEW_DEATHS]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NEW_DEATHS"
+                      lineageId="Package\Llenado Muertes\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[NEW_DEATHS]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -10145,6 +10191,46 @@ where [refTable].[ISO_CODE] = ? and [refTable].[LOCATIONN] = ?</property>
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
                           name="SourceInputColumnLineageID">#{Package\Llenado Muertes\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[DATEE]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenado Muertes\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_TOTAL_DEATHS]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Llenado Muertes\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_TOTAL_DEATHS]"
+                      name="PRUEBA_TOTAL_DEATHS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenado Muertes\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[TOTAL_DEATHS]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenado Muertes\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_NEW_DEATHS]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Llenado Muertes\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_NEW_DEATHS]"
+                      name="PRUEBA_NEW_DEATHS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenado Muertes\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[NEW_DEATHS]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -26674,22 +26760,6 @@ where [refTable].[ISO_CODE] = ? and [refTable].[LOCATIONN] = ?</property>
                       externalMetadataColumnId="Package\Llenado PRUEBA\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[ID_TIPO]"
                       lineageId="Package\Llenado PRUEBA\Lookup.Outputs[Lookup Match Output].Columns[ID_TIPO]" />
                     <inputColumn
-                      refId="Package\Llenado PRUEBA\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[derivada_TOTAL_TESTS]"
-                      cachedDataType="numeric"
-                      cachedName="derivada_TOTAL_TESTS"
-                      cachedPrecision="18"
-                      cachedScale="5"
-                      externalMetadataColumnId="Package\Llenado PRUEBA\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[TOTAL_TESTS]"
-                      lineageId="Package\Llenado PRUEBA\Derived Column 1.Outputs[Derived Column Output].Columns[derivada_TOTAL_TESTS]" />
-                    <inputColumn
-                      refId="Package\Llenado PRUEBA\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[derivada_NEW_TESTS]"
-                      cachedDataType="numeric"
-                      cachedName="derivada_NEW_TESTS"
-                      cachedPrecision="18"
-                      cachedScale="5"
-                      externalMetadataColumnId="Package\Llenado PRUEBA\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[NEW_TESTS]"
-                      lineageId="Package\Llenado PRUEBA\Derived Column 1.Outputs[Derived Column Output].Columns[derivada_NEW_TESTS]" />
-                    <inputColumn
                       refId="Package\Llenado PRUEBA\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[derivada_TOTAL_TESTS_PER_THOUSAND]"
                       cachedDataType="numeric"
                       cachedName="derivada_TOTAL_TESTS_PER_THOUSAND"
@@ -26729,6 +26799,18 @@ where [refTable].[ISO_CODE] = ? and [refTable].[LOCATIONN] = ?</property>
                       cachedScale="5"
                       externalMetadataColumnId="Package\Llenado PRUEBA\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[TESTS_PER_CASE]"
                       lineageId="Package\Llenado PRUEBA\Derived Column 1.Outputs[Derived Column Output].Columns[derivada_TESTS_PER_CASE]" />
+                    <inputColumn
+                      refId="Package\Llenado PRUEBA\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[PRUEBA_TOTAL_TESTS]"
+                      cachedDataType="i4"
+                      cachedName="PRUEBA_TOTAL_TESTS"
+                      externalMetadataColumnId="Package\Llenado PRUEBA\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[TOTAL_TESTS]"
+                      lineageId="Package\Llenado PRUEBA\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_TOTAL_TESTS]" />
+                    <inputColumn
+                      refId="Package\Llenado PRUEBA\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[PRUEBA_NEW_TESTS]"
+                      cachedDataType="i4"
+                      cachedName="PRUEBA_NEW_TESTS"
+                      externalMetadataColumnId="Package\Llenado PRUEBA\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[NEW_TESTS]"
+                      lineageId="Package\Llenado PRUEBA\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_NEW_TESTS]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -28407,6 +28489,18 @@ where [refTable].[ISO_CODE] = ? and [refTable].[LOCATIONN] = ?</property>
                       cachedLength="50"
                       cachedName="TEST_UNITS"
                       lineageId="Package\Llenado PRUEBA\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[TEST_UNITS]" />
+                    <inputColumn
+                      refId="Package\Llenado PRUEBA\Data Conversion 2.Inputs[Data Conversion Input].Columns[NEW_TESTS]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NEW_TESTS"
+                      lineageId="Package\Llenado PRUEBA\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[NEW_TESTS]" />
+                    <inputColumn
+                      refId="Package\Llenado PRUEBA\Data Conversion 2.Inputs[Data Conversion Input].Columns[TOTAL_TESTS]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL_TESTS"
+                      lineageId="Package\Llenado PRUEBA\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[TOTAL_TESTS]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -28498,6 +28592,46 @@ where [refTable].[ISO_CODE] = ? and [refTable].[LOCATIONN] = ?</property>
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
                           name="SourceInputColumnLineageID">#{Package\Llenado PRUEBA\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[TEST_UNITS]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenado PRUEBA\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_NEW_TESTS]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Llenado PRUEBA\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_NEW_TESTS]"
+                      name="PRUEBA_NEW_TESTS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenado PRUEBA\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[NEW_TESTS]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenado PRUEBA\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_TOTAL_TESTS]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Llenado PRUEBA\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_TOTAL_TESTS]"
+                      name="PRUEBA_TOTAL_TESTS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenado PRUEBA\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[TOTAL_TESTS]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -32980,30 +33114,6 @@ where [refTable].[ISO_CODE] = ? and [refTable].[LOCATIONN] = ?</property>
                       externalMetadataColumnId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[ID_PAIS]"
                       lineageId="Package\Llenado Vacunacion\Lookup 1.Outputs[Lookup Match Output].Columns[ID_PAIS]" />
                     <inputColumn
-                      refId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[derivada_TOTAL_VACCINATIONS]"
-                      cachedDataType="numeric"
-                      cachedName="derivada_TOTAL_VACCINATIONS"
-                      cachedPrecision="18"
-                      cachedScale="5"
-                      externalMetadataColumnId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[TOTAL_VACCINATIONS]"
-                      lineageId="Package\Llenado Vacunacion\Derived Column 1.Outputs[Derived Column Output].Columns[derivada_TOTAL_VACCINATIONS]" />
-                    <inputColumn
-                      refId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[derivada_PEOPLE_FULLY_VACCINATED]"
-                      cachedDataType="numeric"
-                      cachedName="derivada_PEOPLE_FULLY_VACCINATED"
-                      cachedPrecision="18"
-                      cachedScale="5"
-                      externalMetadataColumnId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[PEOPLE_FULLY_VACCINATED]"
-                      lineageId="Package\Llenado Vacunacion\Derived Column 1.Outputs[Derived Column Output].Columns[derivada_PEOPLE_FULLY_VACCINATED]" />
-                    <inputColumn
-                      refId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[derivada_NEW_VACCINATIONS]"
-                      cachedDataType="numeric"
-                      cachedName="derivada_NEW_VACCINATIONS"
-                      cachedPrecision="18"
-                      cachedScale="5"
-                      externalMetadataColumnId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[NEW_VACCINATIONS]"
-                      lineageId="Package\Llenado Vacunacion\Derived Column 1.Outputs[Derived Column Output].Columns[derivada_NEW_VACCINATIONS]" />
-                    <inputColumn
                       refId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[derivada_NEW_VACCINATIONS_SMOOTHED]"
                       cachedDataType="numeric"
                       cachedName="derivada_NEW_VACCINATIONS_SMOOTHED"
@@ -33043,6 +33153,24 @@ where [refTable].[ISO_CODE] = ? and [refTable].[LOCATIONN] = ?</property>
                       cachedScale="5"
                       externalMetadataColumnId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[NEW_VACCINATIONS_SMOOTHED_PER_MILLION]"
                       lineageId="Package\Llenado Vacunacion\Derived Column 1.Outputs[Derived Column Output].Columns[derivada_NEW_VACCINATIONS_SMOOTHED_PER_MILLION]" />
+                    <inputColumn
+                      refId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[PRUEBA_TOTAL_VACCINATIONS]"
+                      cachedDataType="i4"
+                      cachedName="PRUEBA_TOTAL_VACCINATIONS"
+                      externalMetadataColumnId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[TOTAL_VACCINATIONS]"
+                      lineageId="Package\Llenado Vacunacion\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_TOTAL_VACCINATIONS]" />
+                    <inputColumn
+                      refId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[PRUEBA_PEOPLE_FULLY_VACCINATED]"
+                      cachedDataType="i4"
+                      cachedName="PRUEBA_PEOPLE_FULLY_VACCINATED"
+                      externalMetadataColumnId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[PEOPLE_FULLY_VACCINATED]"
+                      lineageId="Package\Llenado Vacunacion\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_PEOPLE_FULLY_VACCINATED]" />
+                    <inputColumn
+                      refId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[PRUEBA_NEW_VACCINATIONS]"
+                      cachedDataType="i4"
+                      cachedName="PRUEBA_NEW_VACCINATIONS"
+                      externalMetadataColumnId="Package\Llenado Vacunacion\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[NEW_VACCINATIONS]"
+                      lineageId="Package\Llenado Vacunacion\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_NEW_VACCINATIONS]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -34683,6 +34811,24 @@ where [refTable].[ISO_CODE] = ? and [refTable].[LOCATIONN] = ?</property>
                       cachedLength="50"
                       cachedName="DATEE"
                       lineageId="Package\Llenado Vacunacion\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[DATEE]" />
+                    <inputColumn
+                      refId="Package\Llenado Vacunacion\Data Conversion 2.Inputs[Data Conversion Input].Columns[TOTAL_VACCINATIONS]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL_VACCINATIONS"
+                      lineageId="Package\Llenado Vacunacion\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[TOTAL_VACCINATIONS]" />
+                    <inputColumn
+                      refId="Package\Llenado Vacunacion\Data Conversion 2.Inputs[Data Conversion Input].Columns[PEOPLE_FULLY_VACCINATED]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="PEOPLE_FULLY_VACCINATED"
+                      lineageId="Package\Llenado Vacunacion\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[PEOPLE_FULLY_VACCINATED]" />
+                    <inputColumn
+                      refId="Package\Llenado Vacunacion\Data Conversion 2.Inputs[Data Conversion Input].Columns[NEW_VACCINATIONS]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NEW_VACCINATIONS"
+                      lineageId="Package\Llenado Vacunacion\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[NEW_VACCINATIONS]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -34752,6 +34898,66 @@ where [refTable].[ISO_CODE] = ? and [refTable].[LOCATIONN] = ?</property>
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
                           name="SourceInputColumnLineageID">#{Package\Llenado Vacunacion\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[DATEE]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenado Vacunacion\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_TOTAL_VACCINATIONS]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Llenado Vacunacion\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_TOTAL_VACCINATIONS]"
+                      name="PRUEBA_TOTAL_VACCINATIONS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenado Vacunacion\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[TOTAL_VACCINATIONS]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenado Vacunacion\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_PEOPLE_FULLY_VACCINATED]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Llenado Vacunacion\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_PEOPLE_FULLY_VACCINATED]"
+                      name="PRUEBA_PEOPLE_FULLY_VACCINATED"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenado Vacunacion\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[PEOPLE_FULLY_VACCINATED]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Llenado Vacunacion\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_NEW_VACCINATIONS]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Llenado Vacunacion\Data Conversion 2.Outputs[Data Conversion Output].Columns[PRUEBA_NEW_VACCINATIONS]"
+                      name="PRUEBA_NEW_VACCINATIONS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Llenado Vacunacion\ADO NET Source 1.Outputs[ADO NET Source Output].Columns[NEW_VACCINATIONS]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -35369,14 +35575,35 @@ where [refTable].[ISO_CODE] = ? and [refTable].[LOCATIONN] = ?</property>
           Language="CSharp"
           ReadOnlyVariables="User::Delimitador,User::Extension,User::FolderError,User::FordelOrigen,User::TablaDestino">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_411a544d0c8d4efe9f3292a70d54928e")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_411a544d0c8d4efe9f3292a70d54928e")]
+[assembly: AssemblyCopyright("Copyright @  2021")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -35822,35 +36049,14 @@ namespace ST_411a544d0c8d4efe9f3292a70d54928e.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_411a544d0c8d4efe9f3292a70d54928e")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_411a544d0c8d4efe9f3292a70d54928e")]
-[assembly: AssemblyCopyright("Copyright @  2021")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -36310,6 +36516,74 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Llenar Temporal"
           TopLeft="250.714289983925,101.694118590834" />
         <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="203.828572134096,120.2000009116">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="49.0285750291793,-60.070588943125"
+              Start="0,0"
+              End="41.5285750291793,-60.070588943125">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="20.5142875145896,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="20.5142875145896,0"
+                    Point2="24.5142875145896,0"
+                    Point3="24.5142875145896,-4" />
+                  <mssgle:LineSegment
+                    End="24.5142875145896,-56.070588943125" />
+                  <mssgle:CubicBezierSegment
+                    Point1="24.5142875145896,-56.070588943125"
+                    Point2="24.5142875145896,-60.070588943125"
+                    Point3="28.5142875145896,-60.070588943125" />
+                  <mssgle:LineSegment
+                    End="41.5285750291793,-60.070588943125" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="403.257147163275,60.1294119684754">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="61.742860755628,57.0117653708146"
+              Start="0,0"
+              End="54.242860755628,57.0117653708146">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="26.871430377814,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="26.871430377814,0"
+                    Point2="30.871430377814,0"
+                    Point3="30.871430377814,4" />
+                  <mssgle:LineSegment
+                    End="30.871430377814,53.0117653708146" />
+                  <mssgle:CubicBezierSegment
+                    Point1="30.871430377814,53.0117653708146"
+                    Point2="30.871430377814,57.0117653708146"
+                    Point3="34.871430377814,57.0117653708146" />
+                  <mssgle:LineSegment
+                    End="54.242860755628,57.0117653708146" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 10]"
           TopLeft="668.228580138148,313.288238913707">
           <EdgeLayout.Curve>
@@ -36587,74 +36861,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="203.828572134096,120.2000009116">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="49.0285750291793,-60.070588943125"
-              Start="0,0"
-              End="41.5285750291793,-60.070588943125">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="20.5142875145896,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="20.5142875145896,0"
-                    Point2="24.5142875145896,0"
-                    Point3="24.5142875145896,-4" />
-                  <mssgle:LineSegment
-                    End="24.5142875145896,-56.070588943125" />
-                  <mssgle:CubicBezierSegment
-                    Point1="24.5142875145896,-56.070588943125"
-                    Point2="24.5142875145896,-60.070588943125"
-                    Point3="28.5142875145896,-60.070588943125" />
-                  <mssgle:LineSegment
-                    End="41.5285750291793,-60.070588943125" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="403.257147163275,60.1294119684754">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="61.742860755628,57.0117653708146"
-              Start="0,0"
-              End="54.242860755628,57.0117653708146">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="26.871430377814,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="26.871430377814,0"
-                    Point2="30.871430377814,0"
-                    Point3="30.871430377814,4" />
-                  <mssgle:LineSegment
-                    End="30.871430377814,53.0117653708146" />
-                  <mssgle:CubicBezierSegment
-                    Point1="30.871430377814,53.0117653708146"
-                    Point2="30.871430377814,57.0117653708146"
-                    Point3="34.871430377814,57.0117653708146" />
-                  <mssgle:LineSegment
-                    End="54.242860755628,57.0117653708146" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -36664,27 +36870,27 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\Data Flow Task\Excel Source"
-          TopLeft="272.857147503872,3.82352946538826" />
-        <NodeLayout
           Size="178.4,41.6"
           Id="Package\Data Flow Task\ADO NET Destination"
           TopLeft="254.285718616174,126.176472357813" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Data Flow Task\Excel Source"
+          TopLeft="272.857147503872,29.8235298300285" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Excel Source Output]"
-          TopLeft="342.771433060023,45.4235294653883">
+          TopLeft="342.771433060023,71.4235298300285">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,80.7529428924245"
+              EndConnector="0,54.7529425277846"
               Start="0,0"
-              End="0,73.2529428924245">
+              End="0,47.2529425277846">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,73.2529428924245" />
+                    End="0,47.2529425277846" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -36696,6 +36902,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Llenado Casos">
     <LayoutInfo>
@@ -36757,14 +36971,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,29.4000000000001"
+              EndConnector="0,29.4"
               Start="0,0"
-              End="0,21.9000000000001">
+              End="0,21.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.9000000000001" />
+                    End="0,21.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -36801,14 +37015,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,27.3999999999999"
+              EndConnector="0,27.4"
               Start="0,0"
-              End="0,19.8999999999999">
+              End="0,19.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.8999999999999" />
+                    End="0,19.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -36882,7 +37096,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -36892,7 +37106,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -36921,9 +37135,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Llenado Continente\Data Conversion"
           TopLeft="352.727272727273,110.909090909091" />
         <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Llenado Continente\Sort"
+          TopLeft="368,383.4" />
+        <NodeLayout
           Size="152.8,41.6"
           Id="Package\Llenado Continente\Derived Column"
           TopLeft="353.636363636364,182.727272727273" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Llenado Continente\Multicast"
+          TopLeft="368,319.2" />
         <NodeLayout
           Size="178.4,41.6"
           Id="Package\Llenado Continente\ADO NET Destination"
@@ -36932,6 +37154,78 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Size="154.4,41.6"
           Id="Package\Llenado Continente\Conditional Split"
           TopLeft="354.545454545454,256.363636363636" />
+        <EdgeLayout
+          Id="Package\Llenado Continente.Paths[Sort Output]"
+          TopLeft="416.8,425">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="13.3090909090909,56.8181818181819"
+              Start="0,0"
+              End="13.3090909090909,49.3181818181819">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.4090909090909" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.4090909090909"
+                    Point2="0,28.4090909090909"
+                    Point3="4,28.4090909090909" />
+                  <mssgle:LineSegment
+                    End="9.30909090909086,28.4090909090909" />
+                  <mssgle:CubicBezierSegment
+                    Point1="9.30909090909086,28.4090909090909"
+                    Point2="13.3090909090909,28.4090909090909"
+                    Point3="13.3090909090909,32.4090909090909" />
+                  <mssgle:LineSegment
+                    End="13.3090909090909,49.3181818181819" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Llenado Continente.Paths[Multicast Output 2]"
+          TopLeft="428,360.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-11.1999999999999,22.6"
+              Start="0,0"
+              End="-11.1999999999999,15.1">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.30000000000001" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.30000000000001"
+                    Point2="0,11.3"
+                    Point3="-4,11.3" />
+                  <mssgle:LineSegment
+                    End="-7.19999999999987,11.3" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-7.19999999999987,11.3"
+                    Point2="-11.1999999999999,11.3"
+                    Point3="-11.1999999999999,15.3" />
+                  <mssgle:LineSegment
+                    End="-11.1999999999999,15.1" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Llenado Continente.Paths[Derived Column Output]"
           TopLeft="430.890909090909,224.327272727273">
@@ -36951,7 +37245,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -36973,35 +37269,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Llenado Continente.Paths[ADO NET Source Output]"
-          TopLeft="430.018181818182,64.3272727272727">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,46.5818181818182"
-              Start="0,0"
-              End="0,39.0818181818182">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.0818181818182" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="120,41.6"
-          Id="Package\Llenado Continente\Multicast"
-          TopLeft="368,319.2" />
         <EdgeLayout
           Id="Package\Llenado Continente.Paths[CORRECTO]"
           TopLeft="508.945454545454,277.163636363636">
@@ -37038,76 +37310,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Llenado Continente\Sort"
-          TopLeft="368,383.4" />
         <EdgeLayout
-          Id="Package\Llenado Continente.Paths[Multicast Output 2]"
-          TopLeft="428,360.8">
+          Id="Package\Llenado Continente.Paths[ADO NET Source Output]"
+          TopLeft="430.018181818182,64.3272727272727">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-11.1999999999999,22.6"
+              EndConnector="0,46.5818181818182"
               Start="0,0"
-              End="-11.1999999999999,15.1">
+              End="0,39.0818181818182">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,7.30000000000001" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,7.30000000000001"
-                    Point2="0,11.3"
-                    Point3="-4,11.3" />
-                  <mssgle:LineSegment
-                    End="-7.19999999999987,11.3" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-7.19999999999987,11.3"
-                    Point2="-11.1999999999999,11.3"
-                    Point3="-11.1999999999999,15.3" />
-                  <mssgle:LineSegment
-                    End="-11.1999999999999,15.1" />
+                    End="0,39.0818181818182" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Llenado Continente.Paths[Sort Output]"
-          TopLeft="416.8,425">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="13.3090909090909,56.8181818181819"
-              Start="0,0"
-              End="13.3090909090909,49.3181818181819">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.4090909090909" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.4090909090909"
-                    Point2="0,28.4090909090909"
-                    Point3="4,28.4090909090909" />
-                  <mssgle:LineSegment
-                    End="9.30909090909086,28.4090909090909" />
-                  <mssgle:CubicBezierSegment
-                    Point1="9.30909090909086,28.4090909090909"
-                    Point2="13.3090909090909,28.4090909090909"
-                    Point3="13.3090909090909,32.4090909090909" />
-                  <mssgle:LineSegment
-                    End="13.3090909090909,49.3181818181819" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -37328,7 +37552,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q3:int">0</Value>
+          type="q3:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -37336,7 +37560,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q4:boolean">false</Value>
+          type="q4:string">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -37353,6 +37577,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Size="155.2,41.6"
           Id="Package\Llenado Pais\Data Conversion"
           TopLeft="455,98" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Llenado Pais\Sort"
+          TopLeft="331,386" />
         <NodeLayout
           Size="157.6,41.6"
           Id="Package\Llenado Pais\ADO NET Source"
@@ -37373,6 +37601,66 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Size="178.4,41.6"
           Id="Package\Llenado Pais\ADO NET Destination"
           TopLeft="89,383.2" />
+        <EdgeLayout
+          Id="Package\Llenado Pais.Paths[Sort Output]"
+          TopLeft="331,405.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-63.6,0"
+              Start="0,0"
+              End="-56.1,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-56.1,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Llenado Pais.Paths[Lookup Match Output]"
+          TopLeft="480,395.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-51.4,11.2"
+              Start="0,0"
+              End="-43.9,11.2">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-21.7,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-21.7,0"
+                    Point2="-25.7,0"
+                    Point3="-25.7,4" />
+                  <mssgle:LineSegment
+                    End="-25.7,7.19999999999999" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-25.7,7.19999999999999"
+                    Point2="-25.7,11.2"
+                    Point3="-29.7,11.2" />
+                  <mssgle:LineSegment
+                    End="-43.9,11.2" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-73.89138671875,-17.609375,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Llenado Pais.Paths[Derived Column Output]"
           TopLeft="609.8,188.8">
@@ -37404,7 +37692,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37426,7 +37716,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37448,7 +37740,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37494,69 +37788,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Llenado Pais\Sort"
-          TopLeft="331,386" />
-        <EdgeLayout
-          Id="Package\Llenado Pais.Paths[Lookup Match Output]"
-          TopLeft="480,395.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-51.4,11.2"
-              Start="0,0"
-              End="-43.9,11.2">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-21.7,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-21.7,0"
-                    Point2="-25.7,0"
-                    Point3="-25.7,4" />
-                  <mssgle:LineSegment
-                    End="-25.7,7.19999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-25.7,7.19999999999999"
-                    Point2="-25.7,11.2"
-                    Point3="-29.7,11.2" />
-                  <mssgle:LineSegment
-                    End="-43.9,11.2" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-73.89138671875,-17.609375,96.3827734375,11.609375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Llenado Pais.Paths[Sort Output]"
-          TopLeft="331,405.4">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-63.6,0"
-              Start="0,0"
-              End="-56.1,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-56.1,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -37568,7 +37802,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -37578,7 +37812,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -37701,7 +37935,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37723,7 +37959,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37745,7 +37983,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37767,7 +38007,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -37779,7 +38021,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -37789,7 +38031,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -37912,7 +38154,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37934,7 +38178,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37956,7 +38202,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -37978,7 +38226,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -37998,7 +38248,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -38008,7 +38258,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -38099,7 +38349,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38121,7 +38373,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38143,7 +38397,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38165,7 +38421,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38217,7 +38475,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -38227,7 +38485,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -38334,7 +38592,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38356,7 +38616,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38378,7 +38640,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38400,7 +38664,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -38412,7 +38678,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -38422,7 +38688,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -38521,7 +38787,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38543,7 +38811,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38565,7 +38835,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38587,7 +38859,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -38644,7 +38918,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q3:int">0</Value>
+          type="q3:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -38652,7 +38926,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q4:boolean">false</Value>
+          type="q4:string">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -38874,7 +39148,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -38884,7 +39158,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -38905,7 +39179,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -38915,7 +39189,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -38982,7 +39256,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39004,7 +39280,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39026,7 +39304,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39060,7 +39340,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -39106,7 +39388,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -39306,7 +39590,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -39316,7 +39600,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -39349,14 +39633,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
