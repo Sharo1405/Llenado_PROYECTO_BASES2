@@ -42,7 +42,9 @@ GO
 
 
 -- Ver la collation de las tablas en la base de datos
-SELECT name, description FROM sys.fn_helpcollations() WHERE name='SQL_Latin1_General_CP1_CI_AS';
+SELECT t.name TableName, c.name ColumnName, collation_name  
+FROM sys.columns c  
+inner join sys.tables t on c.object_id = t.object_id;
 
 /*INFORMACION SOBRE LA FRAGMENTACION DE LOS INDICES EN LAS TABLAS*/
 SELECT  OBJECT_NAME(IDX.OBJECT_ID) AS Table_Name, 
@@ -54,7 +56,7 @@ INNER JOIN sys.indexes IDX  ON IDX.object_id = IDXPS.object_id
 AND IDX.index_id = IDXPS.index_id 
 ORDER BY Fragmentation_Percentage DESC
 
-/***Determinación de la duración prevista de la página**/
+/***Determinaciï¿½n de la duraciï¿½n prevista de la pï¿½gina**/
 
 SELECT
 CASE instance_name WHEN '' THEN 'Overall' ELSE instance_name END AS NUMA_Node, cntr_value AS PLE_s
