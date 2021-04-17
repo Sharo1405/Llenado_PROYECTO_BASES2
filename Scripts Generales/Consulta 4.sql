@@ -7,7 +7,7 @@ GO
 /* DISENADO POR:   Haroldo Arias                                              */
 /* ************************************************************************** */
 /*                              P R O P O S I T O                             */
-/* Vista que muestre los países con mayor aceleración de contagios durante    */
+/* Vista que muestre los paises con mayor aceleraciÃ³n de contagios durante    */
 /* el mes de diciembre 2020 y enero 2021.									  */
 /* ************************************************************************** */
 /*                          MODIFICACIONES                                    */
@@ -16,6 +16,10 @@ GO
 /* ************************************************************************** */
 /*	15-04-2021               Haroldo Arias           Modificacion Inicial     */
 /* ****************************************************************************/
+
+if exists(select 1 from sys.views where name='vw_Reporte_Consulta4' and type='v')
+drop view vw_Reporte_Consulta4;
+go
 
 CREATE VIEW vw_Reporte_Consulta4
  AS 
@@ -27,3 +31,4 @@ CREATE VIEW vw_Reporte_Consulta4
  INNER JOIN PAIS P ON P.ID_PAIS = C.ID_PAIS
  WHERE DATEE BETWEEN '20201201' AND '20210131'
  GROUP BY C.ID_PAIS, P.LOCATIONN;
+ go

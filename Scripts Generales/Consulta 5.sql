@@ -1,0 +1,33 @@
+/*********************************************************/
+/*						CONSULTA 5						 */
+/*********************************************************/
+/* Promedio contagios durante el primer trimestre de la  */
+/* pandemia.											 */
+/*********************************************************/
+
+/*POR PAIS*/
+	SELECT CASOS.ID_PAIS, 
+	       PAIS.LOCATIONN, 
+		   AVG(ISNULL(CASOS.NEW_CASES,0))PROMEDIO 
+	  FROM CASOS, 
+	       PAIS
+	 WHERE CASOS.ID_PAIS=PAIS.ID_PAIS 
+	   AND CASOS.DATEE BETWEEN '2020-03-01' AND '2020-06-30'
+	 GROUP BY CASOS.ID_PAIS,PAIS.LOCATIONN;
+
+/*POR CONTINENTE*/
+	SELECT CONTINENTE.ID_CONTINENTE, 
+		   (CONTINENTE.CONTINENT)Con, 
+		   AVG(ISNULL(CASOS.NEW_CASES,0))PROMEDIO 
+	  FROM CASOS, 
+	       PAIS, 
+		   CONTINENTE
+	 WHERE CASOS.ID_PAIS=PAIS.ID_PAIS 
+	   AND PAIS.ID_CONTINENTE=CONTINENTE.ID_CONTINENTE
+	   AND CASOS.DATEE BETWEEN '2020-03-01' AND '2020-06-30'
+	 GROUP BY CONTINENTE.CONTINENT, CONTINENTE.ID_CONTINENTE;
+
+/*A nivel mundial*/
+	SELECT AVG(ISNULL(CASOS.NEW_CASES,0))PROMEDIO_MUNDIAL 
+	  FROM CASOS
+	 WHERE CASOS.DATEE BETWEEN '2020-03-01' AND '2020-06-30'

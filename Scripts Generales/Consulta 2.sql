@@ -8,7 +8,7 @@ GO
 /* DISENADO POR:   Haroldo Arias                                              */
 /* ************************************************************************** */
 /*                              P R O P O S I T O                             */
-/* Stored procedure que recibe el nombre del país y nos muestra el acumulado  */	
+/* Stored procedure que recibe el nombre del paÃ­s y nos muestra el acumulado  */	
 /* mensual de infectados, muertes y vacunados.								  */
 /* ************************************************************************** */
 /*                          MODIFICACIONES                                    */
@@ -18,7 +18,11 @@ GO
 /*	15-04-2021               Haroldo Arias           Modificacion Inicial     */
 /* ****************************************************************************/
 
-ALTER PROCEDURE sp_Reporte_Consulta2
+if exists(select 1 from sys.objects where object_id = object_id(N'dbo.sp_Reporte_Consulta2'))
+drop procedure sp_Reporte_Consulta2;
+go
+
+CREATE PROCEDURE sp_Reporte_Consulta2
 	@i_pais			VARCHAR(60)
 AS
 
@@ -43,19 +47,19 @@ SELECT @w_id_pais = p.id_pais, @w_nombre_pais=p.locationn
   WHERE c.id_pais = @w_id_pais;
 
 
-  SELECT @w_id_pais CÓDIGO,
-		 @w_nombre_pais PAÍS,
+  SELECT @w_id_pais CODIGO,
+		 @w_nombre_pais PAIS,
 	     CAST(SUM(TOTAL_CASES) AS int) CASOS,
 		 CAST(SUM(TOTAL_DEATHS) AS int) MUERTES,
 		 CAST(SUM(TOTAL_VACCINATIONS) AS int) VACUNACIONES,
 		 MONTH(DATEE) MES,
-		 YEAR(DATEE) AÑO
+		 YEAR(DATEE) AÃ‘O
     FROM #info_pais
 	GROUP BY MONTH(DATEE), YEAR(DATEE)
 
    DROP TABLE #info_pais;
 
-
+GO
 
 
    

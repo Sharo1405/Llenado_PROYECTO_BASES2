@@ -7,8 +7,8 @@ GO
 /* DISENADO POR:   Haroldo Arias                                              */
 /* ************************************************************************** */
 /*                              P R O P O S I T O                             */
-/* Stored Procedure que reciba la fecha como parámetro y que muestre el país  */
-/* que reporto más muertes en ese día										  */ 
+/* Stored Procedure que reciba la fecha como parametro y que muestre el pais */
+/* que reporto mas muertes en ese dia										  */ 
 /* ************************************************************************** */
 /*                          MODIFICACIONES                                    */
 /*                                                                            */
@@ -16,6 +16,10 @@ GO
 /* ************************************************************************** */
 /*	15-04-2021               Haroldo Arias           Modificacion Inicial     */
 /* ****************************************************************************/
+
+if exists(select 1 from sys.objects where object_id = object_id(N'dbo.sp_Reporte_Consulta8'))
+drop procedure sp_Reporte_Consulta8;
+go
 
 CREATE PROCEDURE sp_Reporte_Consulta8
 	@i_fecha	DATE
@@ -31,3 +35,4 @@ SELECT TOP 1
  WHERE DATEE=@i_fecha
  ORDER BY M.NEW_DEATHS DESC;
 
+go

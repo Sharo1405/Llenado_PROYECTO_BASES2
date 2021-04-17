@@ -1,14 +1,14 @@
-/*********************************************************/
-/*						CONSULTA 10						 */
-/*********************************************************/
-/* Consulta que muestre los países de Latinoamérica		 */
-/* ordenados de los más infectados a los menos infectados*/ 
-/* para un rango de fechas en específico.				 */
-/*********************************************************/
+/**********************************************************/
+/*						            CONSULTA 10	         					  */
+/**********************************************************/
+/* Consulta que muestre los paises de Latinoamerica		    */
+/* ordenados de los mas infectados a los menos infectados */ 
+/* para un rango de fechas en especifico.				          */
+/**********************************************************/
 
 /*
 Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Cuba, Ecuador, El Salvador, Guatemala, Honduras, 
-México, Nicaragua, Panamá, Paraguay, Perú, Puerto Rico, República Dominicana, Uruguay, Venezuela
+Mexico, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Republica Dominicana, Uruguay, Venezuela
 */
 
 DECLARE @fecha_inicio DATE,
