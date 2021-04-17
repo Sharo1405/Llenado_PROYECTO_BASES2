@@ -43,3 +43,20 @@ GO
 
 -- Ver la collation de las tablas en la base de datos
 SELECT name, description FROM sys.fn_helpcollations() WHERE name='SQL_Latin1_General_CP1_CI_AS';
+
+/*INFORMACION SOBRE LA FRAGMENTACION DE LOS INDICES EN LAS TABLAS*/
+SELECT  OBJECT_NAME(IDX.OBJECT_ID) AS Table_Name, 
+IDX.name AS Index_Name, 
+IDXPS.index_type_desc AS Index_Type, 
+IDXPS.avg_fragmentation_in_percent  Fragmentation_Percentage
+FROM sys.dm_db_index_physical_stats(DB_ID(), NULL, NULL, NULL, NULL) IDXPS 
+INNER JOIN sys.indexes IDX  ON IDX.object_id = IDXPS.object_id 
+AND IDX.index_id = IDXPS.index_id 
+ORDER BY Fragmentation_Percentage DESC
+
+/***Determinación de la duración prevista de la página**/
+
+SELECT
+CASE instance_name WHEN '' THEN 'Overall' ELSE instance_name END AS NUMA_Node, cntr_value AS PLE_s
+FROM sys.dm_os_performance_counters    
+WHERE counter_name = 'Page life expectancy';
